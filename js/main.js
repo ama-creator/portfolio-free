@@ -54,6 +54,17 @@ $('.clients-wrapper').slick({
   autoplaySpeed: 4000,
   prevArrow:'<button class="slick-btn slick-prev"><img src="images/svg/slider-arrow-left.svg" alt="prev"></button>',
   nextArrow:'<button class="slick-btn slick-next"><img src="images/svg/slider-arrow-right.svg" alt="next"></button>',
+  responsive: [
+    {
+      breakpoint: 788,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+
 });
 
 

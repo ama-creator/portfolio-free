@@ -66,9 +66,9 @@ a{
     color: inherit;
 }
 
-a:visited {
-    color: purple;
-}
+// a:visited {
+//     color: purple;
+// }
 
 .container{
     max-width: 1140px;
@@ -216,6 +216,16 @@ i{
 .fa-envelope path,
 .fa-telegram-plane path{
     fill: #fff;
+}
+
+.about .about-social__link svg{
+    position: static !important;
+    width: 25px !important;
+    height: 25px !important;
+    transform: none;
+}
+.about-social__link path{
+    fill: var(--e-global-color-primary) !important;
 }
 
 
