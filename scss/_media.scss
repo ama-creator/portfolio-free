@@ -1,0 +1,100 @@
+@media (max-width: 1075px){
+    .footer-menu__list-item{
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 960px){
+    .header-logo__text{
+        display: none;
+    }
+    .header-menu__list-link {
+        font-size: 14px;
+    }
+    .header-menu__list-item {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 869px){
+    .footer-logo{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 810px){
+    .footer-menu{
+        display: none !important;
+    }
+}
+
+@media (max-width: 700px){
+    .personal-agreement{
+        flex-direction: column;
+        width: 100%;
+    }
+    .worksheet-form__area-deal{
+        max-width: 100%;
+    }
+    .worksheet-form__area-text{
+        margin: 26px 0 32px;
+    }
+}
+
+@media (max-width: 670px){
+    .header-logo__text{
+        display: block;
+    }
+    .header-menu__list{
+        display: none;
+    }
+    .header-links{
+        display: none;
+    }
+    .nav__toggle {
+        display: flex !important;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+    }
+    .header-inner{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .form-wrapper{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 449px){
+    .footer-logo__pic{
+        display: none;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-right: 0;
+    }
+    .footer-logo__text{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .footer {
+        margin: 64px 0 23px;
+    }
+}
+
+@media (max-width: 410px){
+    .worksheet-text,
+    .worksheet-title{
+        max-width: 307px;
+    }
+
+}

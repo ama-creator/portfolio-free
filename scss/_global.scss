@@ -1,0 +1,371 @@
+:root{
+    --e-global-color-primary: #decfcf;
+    --e-global-color-secondary: #f6eee8;
+    --e-global-color-text: #756477;
+    --e-global-color-accent: #eda7a7;
+    --e-global-typography-primary-font-family: "Arial";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Arial";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Tenor Sans";
+    --e-global-typography-text-font-size: 18px;
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-text-line-height: 1.2em;
+    --e-global-typography-accent-font-family: "Tenor Sans";
+    --e-global-typography-accent-font-weight: 500;
+
+
+    --woocommerce: #a46497;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-blue: #2ea2cc;
+    --wc-primary: #a46497;
+    --wc-primary-text: #fff;
+    --wc-secondary: #ebe9eb;
+    --wc-secondary-text: #515151;
+    --wc-highlight: #77a464;
+    --wc-highligh-text: #fff;
+    --wc-content-bg: #fff;
+    --wc-subtext: #767676;
+}
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #fff;
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea{
+    resize: none;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.active{
+    color: var(--e-global-color-accent) !important;
+    border-bottom: 3.5px solid var(--e-global-color-accent) !important;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}
+
+.fas::before,
+.fab::before{
+    font-family: "FontAwesome";
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--e-global-color-primary);
+}
+
+i{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-linkedin-in::before {
+    content: "\f0e1";
+}
+
+.fa-book-open::before {
+    content: "\f518";
+}
+
+// .fa-envelope::before {
+//     content: "\f0e0";
+// }
+
+.svg-inline--fa{
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.svg-inline--fa path{
+    fill: var(--e-global-color-primary);
+}
+
+.fa-space-shuttle{
+    rotate: -90deg;
+}
+
+.fa-shopping-basket{
+    width: 55px !important;
+    height: 50px !important;
+}
+
+.fa-space-shuttle{
+    width: 45px !important;
+    height: 56px !important;
+}
+
+.fa-battery-full{
+    width: 56px !important;
+    height: 45px !important;
+}
+
+.fa-book-open{
+    width: 50px !important;
+    height: 45px !important;
+}
+
+.fa-shopping-basket path:hover,
+.fa-battery-full path:hover,
+.fa-space-shuttle path:hover,
+.fa-book-open:hover path{
+    fill: var(--e-global-color-text); 
+    transition: all .3s;
+}
+
+.fa-chalkboard-teacher,
+.fa-tasks{
+    width: 62px !important;
+    height: 61px !important;
+}
+
+.fa-comments{
+    width: 61px !important;
+    height: 61px !important;
+}
+.fa-tasks,
+.fa-comments,
+.fa-chalkboard-teacher{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-tasks path,
+.fa-comments path,
+.fa-chalkboard-teacher path{
+    fill: #fff;
+}
+
+.why-carts__box:nth-child(1):hover .why-carts__box-logo,
+.why-carts__box:nth-child(2):hover .why-carts__box-logo,
+.why-carts__box:nth-child(3):hover .why-carts__box-logo{
+    background-color: var(--e-global-color-text);
+    transition: all .5s;
+}
+
+.fa-envelope,
+.fa-telegram-plane{
+    width: 18px !important;
+    height: 18px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-envelope path,
+.fa-telegram-plane path{
+    fill: #fff;
+}
+
+
+// STYLES FOR SLYDER START 
+.slick-list.draggable{
+    width: 896px;
+    margin: 0 auto;
+}
+
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.slick-prev{
+    left: 0;
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-active button{
+    border: none;
+    background: transparent;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #000;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background: #000;
+    }
+}
+
+
+li[role=presentation] button{
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: rgb(160, 158, 158);
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+    }
+}
+// STYLES FOR SLYDER END 
+
+// CSS ANIMATION START
+.info-about__rate-php,
+.info-about__rate-adobe,
+.info-about__rate-html,
+.info-about__rate-wp{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.info-about__rate-php::before{
+    animation: rate-php 2s forwards;
+}
+.info-about__rate-adobe::before{
+    animation: rate-adobe 2s forwards;
+}
+.info-about__rate-html::before{
+    animation: rate-html 2s forwards;
+}
+.info-about__rate-wp::before{
+    animation: rate-wp 2s forwards;
+}
+
+@keyframes rate-wp {
+    0% {
+        width: 0;
+       }
+    100% {
+     opacity: 1;
+     width: 98%;
+     background-color: var(--e-global-color-accent);
+    }
+}
+
+@keyframes rate-html {
+    0% {
+        width: 0;
+       }
+    100% {
+     opacity: 1;
+     width: 98%;
+     background-color: var(--e-global-color-accent);
+    }
+}
+
+@keyframes rate-adobe {
+    0% {
+        width: 0;
+       }
+    100% {
+     opacity: 1;
+     width: 78%;
+     background-color: var(--e-global-color-accent);
+    }
+}
+
+@keyframes rate-php {
+    0% {
+        width: 0;
+       }
+    100% {
+     opacity: 1;
+     width: 70%;
+     background-color: var(--e-global-color-accent);
+    }
+}
+// CSS ANIMATION END
+
+
+
