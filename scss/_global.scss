@@ -45,6 +45,7 @@ body{
     background-color: #fff;
     font-style: normal;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 ul,
@@ -324,16 +325,16 @@ li[role=presentation] button{
 }
 
 .info-about__rate-php::before{
-    animation: rate-php 2s forwards;
+    animation: rate-php 7s forwards;
 }
 .info-about__rate-adobe::before{
-    animation: rate-adobe 2s forwards;
+    animation: rate-adobe 7s forwards;
 }
 .info-about__rate-html::before{
-    animation: rate-html 2s forwards;
+    animation: rate-html 8s forwards;
 }
 .info-about__rate-wp::before{
-    animation: rate-wp 2s forwards;
+    animation: rate-wp 9s forwards;
 }
 
 @keyframes rate-wp {

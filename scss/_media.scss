@@ -18,16 +18,21 @@
     .header .menu-nav{
         display: none;
     }
-    .portfolio .menu-nav{
+    .portfolio .menu-nav,
+    .blog .menu-nav{
         display: block !important;
+        margin-bottom: 25px;
+        margin-top: 35px;
     }
-
+    .blog .menu-nav .menu-nav__list,
     .portfolio .menu-nav .menu-nav__list{
         justify-content: flex-start;
     }
+    .blog .menu-nav .menu-nav__list-link:hover,
     .header-portfolio .menu-nav__list-link:hover{
         border-bottom: none;
     }
+    .blog .menu-nav .active,
     .portfolio .menu-nav .active{
         border-bottom: none !important;
     }
@@ -79,6 +84,14 @@
 
 
 // PAGE INDEX START
+@media (max-width: 1036px){
+    .info-carts__box-title{
+        font-size: 20px;
+    }
+    .info-carts__box-text{
+        font-size: 15px;
+    }
+}
 @media (max-width: 1024px){
     .about-social{
         order: -2;
@@ -118,13 +131,31 @@
     .about-inner{
         width: 50%;
     }
+    .slick-list.draggable{
+        padding: 0 !important;
+        margin: 0 auto !important;
+        max-width: 149px !important;
+    }
 }
 
 @media (max-width: 857px) {
     .about-me__download {
         margin-right: 20px;
     }
+    .info-carts__box{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .info-carts__box-title {
+        font-size: 18px;
+    }
+    .info-carts__box-text {
+        font-size: 14px;
+    }
 }
+
+
+
 
 @media (max-width: 788px) {
     .about-wrapper{
@@ -163,18 +194,13 @@
         margin-left: 10px;
         margin-top: 20px;
     }
-
-
     .wrapper{
-
         flex-direction: column;
     }
     .info-inner,
     .info-about{
         width: 100%
     }
-
-    // высота 
     .about,
     .wrapper,
     .info,
@@ -236,11 +262,6 @@
     .contacts-wrapper__item-link:nth-child(1){
         margin-bottom: 35px;
     }
-    .slick-list.draggable{
-        padding: 0 !important;
-        margin: 0 auto !important;
-        max-width: 149px !important;
-    }
     .why-carts__box-logo{
         top: 17px;
         
@@ -254,6 +275,48 @@
     }
     .info-carts__box-text{
         max-width: 100%;
+    }
+    // to backup 
+
+    .info-carts__box{
+        padding: 25px;
+        margin-bottom: 15px;
+    }
+    .info-carts__box-title {
+        font-size: 25px;
+    }
+    .info-carts__box-text {
+        font-size: var(--e-global-typography-text-font-size);
+    }
+    .experience-box__info{
+        margin-bottom: 20px;
+    }
+    .portfolio-inner{
+        display: none;
+    }
+    .porfolio-gallary{
+        display: block !important;
+    }
+    .portfolio-nav__link--active{
+        border-left: none !important;
+        padding-left: 0 !important;
+    }
+    .portfolio-nav__link{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0 !important;
+    }
+    .portfolio-work__inner {
+        grid-template-columns: repeat(1,1fr);
+        max-width: 100%;
+    }
+    .portfolio-work__pic {
+        width: 100% !important;
+        max-height: 435px !important;
+    }
+    .portfolio-work__more{
+        width: 114.2px;
+        margin: 0 0 0 auto;
     }
 }
 
@@ -297,3 +360,21 @@
 }
 // PAGE INDEX END
 
+@media (max-width: 965px) {
+    .blog .partners,
+    .portfolio .partners{
+        height: 195px;
+    }
+    .main-about .partners{
+        height: 170px;
+    }
+    .partners-bunners__logo:first-child{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 503px) {
+    .partners-bunners__logo{
+        width: 100%;
+    }
+}

@@ -18,6 +18,9 @@
 // SECTION ABOUT START 
 .about{
     min-height: 100vh;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
     &-wrapper{
         display: flex;
         align-items: center;
@@ -82,6 +85,7 @@
         }
     }
     &-photo{
+        transition: transform 0.6s;
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: cover;
@@ -110,6 +114,8 @@
 // SECTION INFO START 
 .info{
     height: 100vh;
+    perspective: 1000px;
+    transform-style: preserve-3d;
     &-about{
         width: 48%;
     }
@@ -153,15 +159,21 @@
     &-inner{
         display: flex;
         width: 48%;
+        perspective: 1000px;
+        transform-style: preserve-3d;
     }
     &-carts{
         margin-right: 20px;
+        width: 100%;
+        perspective: 1000px;
+        transform-style: preserve-3d;
         &:nth-child(2){
             margin-right: 0;
             margin-top: 40px;
         }
     }
     &-carts__box{
+        transition: transform 0.5s;
         padding: 25px 25px 25px 25px;
         border-style: solid;
         border-color: #DECFCF00;
@@ -169,6 +181,7 @@
         box-shadow: 0 0 32px 0 #decfcf;
         margin-bottom: 15px;
         text-align: center;
+        width: auto;
         &-title{
             font-family: "Arial",sans-serif;
             font-size: 25px;
@@ -185,7 +198,7 @@
             font-weight: var(--e-global-typography-text-font-weight);
             line-height: var(--e-global-typography-text-line-height);
             text-align: center;       
-            max-width: 176px;     
+            max-width: 208px;     
             margin: 0 auto;
         }
     }
@@ -200,9 +213,12 @@
         display: flex;
         justify-content: space-between;
     }
-    &-box{
-
+    &-box__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    &-box__sign,
     &-box__project{
         font-family: "Arial",sans-serif;
         font-weight: 600;
@@ -290,6 +306,7 @@
             background-color: #F6EEE866;
             opacity: 1;
             transition: opacity .5s;
+            border-radius: 15px;
         }
     }
     &-work__pic{
@@ -308,11 +325,19 @@
     &-work__inner--active{
         display: block !important;
     }
+    &-work__inner--viseble{
+        display: grid !important;
+    }
+    &-work__inner--disabled{
+        display: none !important;
+    }
 }
 // SECTION PORTFOLIO END 
 
 // SECTION WHY START 
 .why{
+    perspective: 1000px;
+    transform-style: preserve-3d;
     &-about{
         width: 50%;
         padding: 15px;
@@ -346,6 +371,7 @@
         border-radius: 15px 15px 15px 15px;
         box-shadow: 0 0 32px 0 #decfcf;
         margin-bottom: 15px;
+        transition: transform 0.5s;
         &-title{
             font-family: "Arial",sans-serif;
             font-size: 25px;
@@ -470,8 +496,19 @@
         font-weight: var(--e-global-typography-primary-font-weight);
         font-size: 24px;
         color: var(--e-global-color-text);
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
+    }
+    &-bunners{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-bunners__logo{
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 468px;
+        height: 60px;
     }
 }
 // SECTION PARTNERS END
@@ -608,11 +645,15 @@
     &-pagination__item:last-child .portfolio-pagination__link{
         margin-right: 0;
     }
+    &-work__inner--active{
+        display: block !important;
+    }
 }
+
 
 .portfolio .partners{
     padding: 20px 0 20px 0;
-    height: 90px;
+    height: 130px;
 }
 // SECTION PORFOLIO END
 
@@ -770,7 +811,7 @@
 
 .blog .partners{
     padding: 20px 0 20px 0;
-    height: 90px;
+    height: 130px;
 }
 
 // SECTION BLOG END

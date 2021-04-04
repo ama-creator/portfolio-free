@@ -34,7 +34,7 @@
         </div>
 
         <div class="about-inner">
-        <div class="about-photo" style="background-image: url('images/svg/vel_wild.svg');"></div>
+        <div class="about-photo " style="background-image: url('images/svg/vel_wild.svg');"></div>
 
         <div class="about-social">
           <a class="about-social__link" href="https://www.linkedin.com/in/valentina-dyka-72545b132/" target="_blank"
@@ -59,7 +59,7 @@
     </div>
   </section>
 
-  <section class="info">
+  <section class="info" id="line"> 
     <div class="container">
       <div class="wrapper">
         <div class="info-about">
@@ -71,42 +71,42 @@
             результат.</p>
           <div class="info-about__rate">
 
-            <h4 class="info-about__rate-title">WordPress</h4>
-            <div class="info-about__rate-status info-about__rate-wp"></div>
+            <h4 class="info-about__rate-title animate-bottom">WordPress</h4>
+            <div class="info-about__rate-status info-about__rate-wp animate-bottom"></div>
 
-            <h4 class="info-about__rate-title">HTML/CSS</h4>
-            <div class="info-about__rate-status info-about__rate-html"></div>
+            <h4 class="info-about__rate-title animate-bottom">HTML/CSS</h4>
+            <div class="info-about__rate-status info-about__rate-html animate-bottom"></div>
 
-            <h4 class="info-about__rate-title">Photoshop</h4>
-            <div class="info-about__rate-status info-about__rate-adobe"></div>
+            <h4 class="info-about__rate-title animate-bottom">Photoshop</h4>
+            <div class="info-about__rate-status info-about__rate-adobe animate-bottom"></div>
 
-            <h4 class="info-about__rate-title">PHP</h4>
-            <div class="info-about__rate-status info-about__rate-php"></div>
+            <h4 class="info-about__rate-title animate-bottom">PHP</h4>
+            <div class="info-about__rate-status info-about__rate-php animate-bottom"></div>
 
           </div>
         </div>
 
         <div class="info-inner">
           <div class="info-carts">
-            <div class="info-carts__box">
+            <div class="info-carts__box info-one animate-bottom">
               <i aria-hidden="true" class="fas fa-shopping-basket"></i>
               <p class="info-carts__box-title">E-commerce</p>
               <p class="info-carts__box-text">Создание интернет магазинов под ключ</p>
             </div>
-            <div class="info-carts__box">
+            <div class="info-carts__box info-two animate-bottom">
               <i aria-hidden="true" class="fas fa-battery-full"></i>
-              <p class="info-carts__box-title">Корпоративные сайты </p>
+              <p class="info-carts__box-title ">Корпоративные сайты </p>
               <p class="info-carts__box-text">Комплексный подход к разработке сайта</p>
             </div>
           </div>
 
           <div class="info-carts">
-            <div class="info-carts__box">
+            <div class="info-carts__box info-three animate-bottom">
               <i aria-hidden="true" class="fas fa-space-shuttle"></i>
               <p class="info-carts__box-title">Landing Page</p>
               <p class="info-carts__box-text">Продающая страница для быстрых результатов</p>
             </div>
-            <div class="info-carts__box">
+            <div class="info-carts__box info-four animate-bottom">
               <i aria-hidden="true" class="fas fa-book-open"></i>
               <p class="info-carts__box-title">Обучение</p>
               <p class="info-carts__box-text">Индивидуальное или корпоративное обучение</p>
@@ -121,22 +121,28 @@
     <div class="container">
       <div class="experience-inner">
         <div class="experience-box">
-          <P class="experience-box__project">+15</P>
+          <div class="experience-box__inner">
+            <p class="experience-box__sign">+</p>
+          <P data-nmbr="50" class="experience-box__project">0</P>
+          </div>
           <p class="experience-box__info">реализованных проектов</p>
         </div>
 
         <div class="experience-box">
-          <P class="experience-box__project">0</P>
+          <P data-nmbr="8" class="experience-box__project">0</P>
           <p class="experience-box__info">лет опыта</p>
         </div>
 
         <div class="experience-box">
-          <P class="experience-box__project">+600</P>
+          <div class="experience-box__inner">
+            <p class="experience-box__sign">+</p>
+            <P data-nmbr="999" class="experience-box__project"> 0</P>
+          </div>
           <p class="experience-box__info">рабочих часов</p>
         </div>
 
         <div class="experience-box">
-          <P class="experience-box__project">0</P>
+          <P data-nmbr="40" class="experience-box__project">0</P>
           <p class="experience-box__info">довольных клиентов</p>
         </div>
       </div>
@@ -147,17 +153,17 @@
     <div class="container">
       <div class="portfolio-inner">
         <div class="portfolio-nav">
-          <a href="#!" class="portfolio-nav__link portfolio-nav__link--active">Все работы</a>
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--active portfolio-nav__link--one">Все работы</a>
 
-          <a href="#!" class="portfolio-nav__link">Разработка сайта</a>
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--two">Разработка сайта</a>
 
-          <a href="#!" class="portfolio-nav__link">E-commerce</a>
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--three">E-commerce</a>
 
-          <a href="#!" class="portfolio-nav__link">Верстка</a>
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--four">Верстка</a>
         </div>
 
         <div class="portfolio-work">
-          <div class="portfolio-work__inner">
+          <div class="portfolio-work__inner portfolio-work__inner--one">
             <a href="" class="portfolio-work__link"><img src="images/209134208181208191209130208190208178.webp" alt=""
                 class="portfolio-work__pic"></a>
             <a href="" class="portfolio-work__link"><img src="images/08186208176-209129208176208185209130.webp" alt=""
@@ -168,7 +174,7 @@
                 class="portfolio-work__pic"></a>
           </div>
 
-          <div class="portfolio-work__inner" style="display: none;">
+          <div class="portfolio-work__inner portfolio-work__inner--two" style="display: none;">
             <a href="" class="portfolio-work__link"><img src="images/209134208181208191209130208190208178.webp" alt=""
                 class="portfolio-work__pic"></a>
             <a href="" class="portfolio-work__link"><img src="images/spezpereezd.webp" alt=""
@@ -179,7 +185,7 @@
                 class="portfolio-work__pic"></a>
           </div>
 
-          <div class="portfolio-work__inner" style="display: none;">
+          <div class="portfolio-work__inner portfolio-work__inner--three" style="display: none;">
             <a href="" class="portfolio-work__link"><img src="images/08186208176-209129208176208185209130.webp" alt=""
                 class="portfolio-work__pic"></a>
             <a href="" class="portfolio-work__link"><img src="images/otticomichel-3.webp" alt=""
@@ -190,10 +196,68 @@
                 class="portfolio-work__pic"></a>
           </div>
 
-          <div class="portfolio-work__inner" style="display: none;">
+          <div class="portfolio-work__inner portfolio-work__inner--four" style="display: none;">
             <a href="" class="portfolio-work__link"><img src="images/3-min.webp" alt="" class="portfolio-work__pic"></a>
           </div>
           <a href="" class="portfolio-work__more">все портфолио</a>
+        </div>
+
+      </div>
+
+      <div class="porfolio-gallary" style="display: none;">
+
+        <div class="porfolio-gallary__box">
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--active portfolio-nav__link--one">Все работы</a>
+
+          <div class="portfolio-work__inner portfolio-work__inner--one">
+            <a href="" class="portfolio-work__link"><img src="images/209134208181208191209130208190208178.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/08186208176-209129208176208185209130.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/otticomichel-3.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/spezpereezd.webp" alt=""
+                class="portfolio-work__pic"></a>
+                <a href="" class="portfolio-work__more">все портфолио</a>
+          </div>
+        </div>
+        <div class="porfolio-gallary__box">
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--two">Разработка сайта</a>
+          <div class="portfolio-work__inner portfolio-work__inner--two" style="display: none;">
+            <a href="" class="portfolio-work__link"><img src="images/209134208181208191209130208190208178.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/spezpereezd.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/obivochka.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/bravo-suhie-zavtraki.webp" alt=""
+                class="portfolio-work__pic"></a>
+                <a href="" class="portfolio-work__more">все портфолио</a>
+          </div>
+        </div>
+
+        <div class="porfolio-gallary__box">
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--three">E-commerce</a>
+          <div class="portfolio-work__inner portfolio-work__inner--three" style="display: none;">
+            <a href="" class="portfolio-work__link"><img src="images/08186208176-209129208176208185209130.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/otticomichel-3.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/taisshoes.webp" alt=""
+                class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__link"><img src="images/chadao.webp" alt=""
+                class="portfolio-work__pic"></a>
+                <a href="" class="portfolio-work__more">все портфолио</a>
+
+          </div>
+        </div>
+
+        <div class="porfolio-gallary__box">
+          <a href="#!" class="portfolio-nav__link portfolio-nav__link--four">Верстка</a>
+          <div class="portfolio-work__inner portfolio-work__inner--four" style="display: none;">
+            <a href="" class="portfolio-work__link"><img src="images/3-min.webp" alt="" class="portfolio-work__pic"></a>
+            <a href="" class="portfolio-work__more">все портфолио</a>
+          </div>
         </div>
 
       </div>
@@ -213,7 +277,7 @@
         </div>
 
         <div class="why-carts">
-          <div class="why-carts__box">
+          <div class="why-carts__box why-one animate-bottom">
             <div class="why-carts__box-logo">
               <i aria-hidden="true" class="fas fa-tasks"></i>
             </div>
@@ -224,7 +288,7 @@
             </div>
           </div>
 
-          <div class="why-carts__box">
+          <div class="why-carts__box why-two animate-bottom">
             <div class="why-carts__box-logo">
               <i aria-hidden="true" class="fas fa-comments"></i>
             </div>
@@ -234,7 +298,7 @@
             </div>
           </div>
 
-          <div class="why-carts__box">
+          <div class="why-carts__box why-three animate-bottom">
             <div class="why-carts__box-logo">
               <i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
             </div>
@@ -297,6 +361,10 @@
   <section class="partners">
     <div class="container">
       <h4 class="partners-title">Партнеры</h4>
+      <div class="partners-bunners">
+        <div class="partners-bunners__logo" style="background-image: url('images/turbo.jpg');"></div>
+        <div class="partners-bunners__logo" style="background-image: url('images/hunt.png');"></div>
+    </div>
     </div>
   </section>
 
@@ -335,11 +403,8 @@
 
   <script defer src="fontawesome/all.min.js"></script>
   <script defer src="fontawesome/v4.min-shims.js"></script>
-
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
